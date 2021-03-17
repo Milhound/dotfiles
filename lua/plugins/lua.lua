@@ -5,7 +5,6 @@ return require("packer").startup(
     function()
         use {"wbthomason/packer.nvim", opt = true}
         use {"kyazdani42/nvim-web-devicons"}
-        use {"joshdick/onedark.vim"}
         use {"glepnir/galaxyline.nvim"}
         use {"akinsho/nvim-bufferline.lua"}
         use {"nvim-treesitter/nvim-treesitter"}
@@ -14,7 +13,6 @@ return require("packer").startup(
 	use {"rakr/vim-one"}
         use {"ryanoasis/vim-devicons"}
         use {"onsails/lspkind-nvim"}
-	use {"kaicataldo/material.vim"}
         use {'preservim/nerdtree'}
         use {"windwp/nvim-autopairs"}
         use {"alvan/vim-closetag"}
