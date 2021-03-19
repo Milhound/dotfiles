@@ -1,4 +1,3 @@
--- Mapping
 local cmd = vim.cmd
 local g, o, w, b = vim.g, vim.o, vim.wo, vim.bo
 
@@ -22,6 +21,7 @@ require("lspkind").init(
 
 -- Options
 g.auto_save = 1
+g.spellang = 'en'
 o.mouse = 'a'
 o.hidden = true
 o.clipboard = 'unnamedplus'
@@ -32,3 +32,7 @@ b.softtabstop = -1
 b.expandtab = true
 w.number = true
 cmd 'colo one'
+
+-- Mapping
+vim.api.nvim_set_keymap('n', '<F11>', ':set spell!<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<F11>', ':set spell!<CR>', { noremap = true, silent = true })
